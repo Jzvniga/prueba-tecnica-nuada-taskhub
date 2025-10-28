@@ -1,4 +1,4 @@
-# 🚀 Prueba Técnica: Task Hub (Full-Stack MERN + Python/MCP)
+#  Prueba Técnica: Task Hub (Full-Stack MERN + Python/MCP)
 
 Desarrollado por: **José I. Zúñiga Osores** 
 Fecha: **Octubre 2025**
