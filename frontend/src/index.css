@@ -1,0 +1,248 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px; 
+  --main-title-size: 3.2rem;
+  --section-title-size: 1.15rem; 
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: inherit;
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--main-title-size);
+  line-height: 1.1;
+  text-align: center; 
+  margin-bottom: 0.5em; 
+}
+
+h2 {
+
+  font-size: var(--section-title-size);
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+
+  font-size: var(--section-title-size);
+  font-weight: 500;
+  margin-bottom: 0.8em;
+  margin-top: 1.2em; 
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.app-container {
+  max-width: 600px; 
+  width: 95%; 
+  padding: 2.5em; 
+  border-radius: 12px;
+  background-color: var(--background-color, #242424); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+}
+
+
+.btn-primary {
+  background-color: #646cff; 
+  border-color: #646cff;
+  color: white; 
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  width: auto;
+}
+.btn-primary:hover {
+  background-color: #535bf2;
+  border-color: #535bf2;
+}
+
+.form-group label {
+  font-size: 1.15rem;
+  margin-bottom: 0.5em;
+  display: block;
+  font-weight: 500; 
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.input-field {
+    width: 100%;
+    padding: 1em; 
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    background-color: #1a1a1a; 
+    color: inherit;
+    font-size: 1.05rem; 
+    box-sizing: border-box;
+    margin-bottom: 0.8em;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.input-field::placeholder,
+.search-input::placeholder {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.55);
+}
+
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"] {
+  font-size: 1.05rem;
+  padding: 0.9em 0.9em;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: inherit;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+
+input, select, textarea {
+  font-size: 1.05rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.8em 1em; 
+    border-radius: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #1a1a1a;
+    color: inherit;
+    font-size: 1.05rem; 
+    box-sizing: border-box; 
+    margin-bottom: 1.5em;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.task-item {
+    padding: 1em 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.task-item:last-child {
+    border-bottom: none;
+}
+.task-item p {
+
+    font-size: 1rem; 
+    font-weight: 400;
+    margin: 0 0 0.2em 0;
+    line-height: 1.25;
+}
+
+.task-item .task-title {
+  display: block;
+  font-size: var(--section-title-size) !important;
+  font-weight: 700 !important;
+  line-height: 1.05 !important;
+  margin-bottom: 0.15em;
+}
+.task-item small {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.78);
+    display: block;
+    margin-top: 0.25em;
+}
+.task-due {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.82);
+    margin-left: 0.5em;
+    font-size: 0.98rem;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+.form-error, .error-state {
+    color: #ff5555; 
+    font-weight: 500;
+}
+.loading-state {
+    color: #646cff;
+    text-align: center;
+}
+
+
+@media (min-width: 900px) {
+  .app-container {
+    max-width: 800px;
+    padding: 3.2em;
+  }
+
+
+  h2, h3, .task-item .task-title {
+    font-size: var(--section-title-size);
+  }
+
+  .task-item small {
+    font-size: 1rem;
+  }
+}

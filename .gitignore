@@ -1,0 +1,10 @@
+# Directorios de Node
+/backend/node_modules
+/frontend/node_modules
+
+# Directorios de Python
+/analysis/venv
+__pycache__
+
+# Archivos de Entorno
+.env

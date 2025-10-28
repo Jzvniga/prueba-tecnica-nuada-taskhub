@@ -1,0 +1,30 @@
+{
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "create_task",
+        "description": "Crea una nueva tarea en la plataforma Task Hub, incluyendo un título obligatorio y una fecha de vencimiento opcional. Útil para organizar el trabajo o establecer recordatorios.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "El título de la tarea a crear (ej: 'Revisar la documentación del Protocolo de Contexto del Modelo'). Es obligatorio."
+            },
+            "due": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Fecha y hora opcional de vencimiento, en formato ISO 8601 (YYYY-MM-DDTHH:MM:SSZ). Si se provee, debe ser una fecha futura."
+            }
+          },
+          "required": ["title"]
+        }
+      }
+    }
+  ],
+  "tool_description_metadata": {
+    "protocol": "Model Context Protocol (MCP) compatible",
+    "version": "v1"
+  }
+}
