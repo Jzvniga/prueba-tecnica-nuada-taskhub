@@ -76,7 +76,7 @@ Para levantar el proyecto, siga los siguientes pasos desde el directorio raíz (
 
 ---
 
-## 4. Bonus Implementados (Para Destacar)
+## 4. Bonus Implementados
 
 | Opción | Descripción | Instrucciones |
 | :--- | :--- | :--- |
